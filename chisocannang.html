@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let weight1 = prompt('Nhập cân nặng');
+        let hight1 = prompt('Nhập chiều cao');
+        let weight = parseInt(weight1);
+        let hight = parseInt(hight1);
+        let BMI = weight / Math.pow(hight, 2);
+        if (BMI < 18.5) {
+            alert('Underweight');
+        } else if (BMI >= 18.5 && 25 > BMI) {
+            alert('Nomal');
+        } else if (BMI >= 25 && BMI < 30) {
+            alert ('Overweight');
+        } else if (30 <= BMI) {
+            alert ('Obese')
+        }
+
+    </script>
+</body>
+</html>
